@@ -23,6 +23,8 @@ set -e # fail fast
 
 
 MY_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" > /dev/null && pwd )"
+
+# Always reset configuration each time you run semafor
 source "${MY_DIR}/config.sh"
 
 if [ $# -lt 2 -o $# -gt 2 ]; then
@@ -30,6 +32,7 @@ if [ $# -lt 2 -o $# -gt 2 ]; then
    exit 1
 fi
 
+# check if it is 64 bit or not
 if [ `uname -m` != "x86_64" ]; then
    echo -n "\nNOTE: You should really be running this on a 64-bit architecture."
    # give the user the chance to CTRL-C here...

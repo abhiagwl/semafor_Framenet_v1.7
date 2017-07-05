@@ -251,6 +251,8 @@ public class RequiredDataCreation {
 				int lastIndex = name.lastIndexOf(".");
 				String word = name.substring(0, lastIndex).toLowerCase();
 				String lemma = wnr.getLemma(word, conversionMap.get(pos));
+				if(lemma == null)
+				    continue;
 				result.add(lemma + "_" + conversionMap.get(pos).substring(0, 1));
 				count++;
 			}

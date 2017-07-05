@@ -5,7 +5,7 @@ source "$(dirname "${BASH_SOURCE[0]}")/../bin/config.sh"
 
 
 # choose a name for the model to train
-export model_name="changeme"
+export model_name="Semafor17"
 
 # should set to roughly the number of cores available
 export num_threads=8
@@ -41,6 +41,8 @@ export fe_file_length=`expr ${fe_file_length% *}`
 export alphabet_file="${model_dir}/alphabet.dat"
 
 export SCAN_DIR="${model_dir}/scan"
+
+export luxmldir="${datadir}/framenet/lu"
 
 echo num_threads="${num_threads}"
 echo gc_threads="${gc_threads}"

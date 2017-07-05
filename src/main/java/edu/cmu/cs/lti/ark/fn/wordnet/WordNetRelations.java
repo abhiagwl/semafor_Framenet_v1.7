@@ -133,6 +133,11 @@ public class WordNetRelations {
 	}
 
 	public String getLemma(String word, String postag) {
+//		System.out.println("getLemma - word: "+word+", posTag: "+postag);
+		if (postag == null)
+		    return null;
+		if (word == null)
+		    return null;
 		return lemmaCache.getUnchecked(Pair.of(word.toLowerCase(), postag));
 	}
 
