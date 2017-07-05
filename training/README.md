@@ -103,7 +103,7 @@ Always make sure you run that ```java``` program in this shell script. Check if 
   ```
   Takes ~ a day (in my case, it takes about 26 hours).
   This step has a regularization hyperparameter, lambda. You may tune lambda on a development set to get the best results.
-  Note in this step, line search in L-BFGS may fail at the end, but that does not mean training failed. Check function values that is print out at each iteration, if it does not change significantly, you may simply take the last generated model written to ```$data_dir$``` and copy it to your model destination folder. However, since intermediate model files have the name format ```argmodel.dat_xxx``` where ```xxx``` is a number, you need to change its name to ```argmodel.dat```. 
+  Note in this step, line search in L-BFGS may fail at the end, but that does not mean training failed. Check function values that is printed out at each iteration, if it does not change significantly, you may simply take the last generated model written to ```$data_dir$``` and copy it to your model destination folder. However, since intermediate model files have the name format ```argmodel.dat_xxx``` where ```xxx``` is a number, you need to change its name to ```argmodel.dat```. 
   
   In my case, it has little effect on the performance. 
 
