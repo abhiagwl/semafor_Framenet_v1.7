@@ -119,15 +119,18 @@ Installation
 Downloads
 ---------
 
-This experimental fork is maintained at <https://github.com/Noahs-ARK/semafor>.
+This experimental fork is maintained at <https://github.com/AlenUbuntu/semafor>. It has made a few fixes and updated semafor to be compatible with framenet 1.7. For more details about framenet 1.7, please refer to <https://framenet.icsi.berkeley.edu/fndrupal/>
+
+For an old version that is compatible with framenet 1.5, please refer to <https://github.com/Noahs-ARK/semafor>
+
 For a more stable version, the latest official release, SEMAFOR v2.1, can be downloaded from
 <https://github.com/Noahs-ARK/semafor-semantic-parser>
 
 In preprocessing, SEMAFOR uses MaltParser as the syntactic dependency parser.
 To use MaltParser, download and unpack the model files for MaltParser and SEMAFOR from here:
-<http://www.ark.cs.cmu.edu/SEMAFOR/semafor_malt_model_20121129.tar.gz> (~140MB).
+<https://utdallas.box.com/s/mgwbpje4stqyyzbl1eocg307pk0pqbc3> (~ 3GB).
 The model file for the MaltParser was trained on sections 02-21 of the WSJ section of the Penn Treebank, and the model
-files for SEMAFOR were trained on the FrameNet 1.5 datasets.
+files for SEMAFOR were trained on the FrameNet 1.7 datasets.
 
 
 Environment Variables
@@ -238,6 +241,12 @@ Contact
 ==========
 
 If you find any bugs or have questions, please email
+Yang Gao (<yxg122530@utdallas.edu>)
+
+or 
+
+original authors: 
+
 Sam Thomson (<sthomson@cs.cmu.edu>),
 Dipanjan Das (<dipanjan@cs.cmu.edu>, <dipanjand@gmail.com>), or
 Nathan Schneider (<nschneid@cs.cmu.edu>, <neatnate@gmail.com>).
