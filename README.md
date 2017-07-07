@@ -1,4 +1,4 @@
-This ReadMe file is a revised version of [Noahs instructions](https://github.com/Noahs-ARK/semafor). In this fork, I made several fixes and update semafor to be compatible with framenet 1.7. 
+#### This ReadMe file is a revised version of [Noahs instructions](https://github.com/Noahs-ARK/semafor). In this fork, I made several fixes in the source code and update semafor to be compatible with framenet 1.7. Please note that semafor provided by Noahs may not work on framenet 1.7. Please download this version of semafor to avoid unexpected training issues.
 
     SEMAFOR (a frame-semantic parser for English)
     Copyright (C) 2012
