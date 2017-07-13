@@ -125,20 +125,8 @@ Always make sure you run that ```java``` program in this shell script. Check if 
 
 ## File Generation Sequence
 
-```mermaid
-graph TD;
-A[cv.train.sentences]
-B[cv.train.sentences.tokenized]
-C[cv.train.sentences.pos.tagged]
-D[cv.train.sentences.all.lemma.tags]
-E[cv.train.sentences.frame.elements]
+![](p2.png)
 
-A --> B;
-B --> C;
-C --> D;
-D --> E;
-
-```
 * tokenzieAndPosTag.sh
 ```sh
 ./bin/tokenizeAndPosTag.sh <input-file> <output-dir>
@@ -156,6 +144,7 @@ As_IN capital_NN of_IN Europe_NNP 's_POS most_JJS explosive_JJ economy_NN ,_, Du
 ```
 
 output is in conll format
+
 ![](p1.png)
 
 ---
@@ -195,6 +184,7 @@ output is in conll format
 2) Each line contains a sentence with annotations
 
 refer to pos.tag file
+
 |field 1| field 2| field 3| field 4| field 5|field 6|field 7|
 |:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|:-------------:|
 |<sub><font size=2>number of words in the sentence (number of items for this line in pos tag file)</font></sub>|<sub><font size=2>n words of the sentence (tab separated)</font></sub>|<sub><font size=2>n POS tags corresponding to each word in previous field</font></sub>|<sub><font size=2>n tokens corresponding to dependency tree labels for each word's syntactic parent.</font></sub>|<sub><font size=2>n tokens corresponding to the index of each syntactic parent (0 is the dummy word, 1 is the first word, and so on).</font></sub>|<sub><font size=2>n tokens are '0'-s. These were there for providing the capability of using NE tags, but right now we don't use them.</font></sub>|<sub><font size=2>n tokens are lemmas for each word, computed using WordNet.</font></sub>|
