@@ -2,7 +2,7 @@
 
 This is a README for training on the FrameNet 1.7 full text annotations which refers to [Noah's training readme file](https://github.com/Noahs-ARK/semafor/tree/master/training).
 
-Yang Gao, yxg122530@utdallas.edu, 07/05/2017.
+Abhinav Agrawal, axa172932@utdallas.edu, 07/05/2017.
 
 Training models for frame-semantic parsing with SEMAFOR is a very laborious and 
 time-consuming. Your kind patience is required to train the models.
